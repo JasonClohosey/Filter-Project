@@ -21,14 +21,15 @@ buttons.forEach((button) => {
     });
 });
 
-// document.getElementById("search-item").addEventListener("keyup", function(event) {
-    
-//     let userInput = document.getElementById("search-item").value;
-//     if (event.keyCode === 13) {
-//         console.log("USER INPUT _ HOPEFULLY", userInput);
-//         document.getElementById("search-item").value = "";
-//     }
-// });
+document.getElementById("search-item").addEventListener("keyup", function(event) {
+    // event.preventDefault();
+    let userInput = document.getElementById("search-item").value;
+//does not work with enter - must use shift key for now
+    if (event.keyCode === 16) {
+        console.log("USER INPUT _ HOPEFULLY", userInput);
+        document.getElementById("search-item").value = "";
+    }
+});
 
 
 
