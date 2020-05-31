@@ -1,22 +1,48 @@
 var buttons = document.querySelectorAll(".btn");
 
+
 buttons.forEach((button) => {
     button.addEventListener("click", function() {
         event.preventDefault();
         if (button.dataset.filter === "all") {
-            console.log("All was clicked");
+            var allItems = document.querySelectorAll(".cakes, .cupcakes, .sweets, .doughnuts");
+            
+            allItems.forEach((item) => {
+                console.log("Each item", item);
+
+            });
         }
         if (button.dataset.filter === "cakes") {
-            console.log("Cakes was clicked");
+            var allCakes = document.querySelectorAll(".cakes");
+            
+            allCakes.forEach((cake) => {
+                console.log("Each cake item", cake);
+
+            });
         }
         if (button.dataset.filter === "cupcakes") {
-            console.log("cupcakes was clicked");
+            var allCupcakes = document.querySelectorAll(".cupcakes");
+            
+            allCupcakes.forEach((cupcake) => {
+                console.log("Each cupcake item", cupcake);
+
+            });
         }
         if (button.dataset.filter === "sweets") {
-            console.log("sweets was clicked");
+            var allSweets = document.querySelectorAll(".sweets");
+            
+            allSweets.forEach((sweets) => {
+                console.log("Each sweets item", sweets);
+
+            });
         }
         if (button.dataset.filter === "doughnuts") {
-            console.log("doughnuts was clicked");
+            var allDoughnuts = document.querySelectorAll(".doughnuts");
+            
+            allDoughnuts.forEach((doughnuts) => {
+                console.log("Each doughnuts item", doughnuts);
+
+            });
         }
     });
 });
